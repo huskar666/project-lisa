@@ -216,3 +216,87 @@ body {
     line-height: 1.5;
     color: #ebf9ed;
 }
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #A4BA93;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 10;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.mobile-nav a:hover {
+    background-color: #6d7c62;
+}
+
+@media (max-width: 768px) {
+    .container, .container1, .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Секція Hero */
+    .hero {
+        padding: 50px 20px;
+        text-align: center;
+        background-size: cover;
+    }
+
+    /* Картки з перевагами */
+    .benefit-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Популярні трави */
+    .herb-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Картки трав */
+    .herb-card {
+        width: 90%;
+        text-align: center;
+    }
+
+    .herb-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Мобільне меню */
+    .mobile-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Кнопка */
+    .button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .container1, .container2 {
+        padding: 0 10px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
